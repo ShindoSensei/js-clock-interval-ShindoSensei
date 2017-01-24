@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function hourRotation (hr) {
-    return (hr / 12) * 360
+    return ((hr / 12) * 360) + (minDegree / 6) * 0.5
+    // For every 1 min,hour hand moves 0.5deg. (minDegree/6) gets minutes now.
+    // Multiply no. of minutes now by 0.5deg/min and we get additional degree to add.
   }
 
   // Initialising minute,second & hr degree positions to current time and rotating hands accordingly
@@ -52,6 +54,5 @@ document.addEventListener('DOMContentLoaded', function () {
       hour.style.transform = 'rotate(' + hourDegree + 'deg)'
     }
   }
-
   setInterval(hourMove, 1000)
 })

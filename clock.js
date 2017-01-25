@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Defining each html object
+  // Defining each html object.
   var hour = document.getElementById('hour')
   var minute = document.getElementById('minute')
   var second = document.getElementById('second')

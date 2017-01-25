@@ -1,27 +1,21 @@
 #clock {
+  position:relative
+  //If add left:500px, expected it to shift right, but didnt!Why?
 }
 
 #clock img {
   position: absolute;
-  left:0px;
-  top:0px
 }
 
 #hour {
-  position: absolute;
-  left: 0px;
-  top: 0px;
+z-index:1
 }
 
 #minute {
-  position: absolute;
-  top: 0px;
-  left: 0px;
+z-index:2
 }
 
 #second {
-  position: absolute;
-  top: 0px;
-  left: 0px;
+z-index:3
 
 }

@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var minute = document.getElementById('minute')
     var second = document.getElementById('second')
 
-    // Functions to convert sec,min,hr to degrees
+    // Functions to convert sec,min,hr to degrees!
     function secondRotation (sec) {
       return (sec / 60) * 360
     }
